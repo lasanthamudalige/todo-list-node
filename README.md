@@ -43,7 +43,12 @@ $ node app.js
 ```
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/91461938/222900319-072cc87f-5eeb-43cc-8ac6-7776a5a5117d.png)
+
+- ***Personal tasks***
+	![image](https://user-images.githubusercontent.com/91461938/222900319-072cc87f-5eeb-43cc-8ac6-7776a5a5117d.png)
+
+- ***Work tasks***
+	![image](https://user-images.githubusercontent.com/91461938/222900941-546b7418-e572-48fa-be03-14f19e84bfc6.png)
 
 ## License 
 This project is open source and available under the [MIT License](https://github.com/lasanthamudalige/todo-list-node/blob/main/LICENSE).
