@@ -30,7 +30,7 @@ $ git clone https://github.com/lasanthamudalige/todo-list-node.git
 $ cd todo-list-node/
 
 # To install all dependencies
-$ node install
+$ npm install
 ```
 
 
@@ -39,7 +39,7 @@ $ node install
 To run this project:
 
 ```
-$ npm app.js
+$ node app.js
 ```
 
 ## License 
