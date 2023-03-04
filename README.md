@@ -42,5 +42,8 @@ To run this project:
 $ node app.js
 ```
 
+## Screenshots
+![image](https://user-images.githubusercontent.com/91461938/222900319-072cc87f-5eeb-43cc-8ac6-7776a5a5117d.png)
+
 ## License 
 This project is open source and available under the [MIT License](https://github.com/lasanthamudalige/todo-list-node/blob/main/LICENSE).
