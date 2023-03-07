@@ -41,7 +41,7 @@ $ cd todo-list-node/
 # To install all dependencies
 $ npm install
 ```
-***You need to replace 'mongoose.connect()' to ('mongodb://127.0.0.1:27017/todolistDB') to run lin local host;
+***You need install mogodb and replace 'mongoose.connect()' to ('mongodb://127.0.0.1:27017/todolistDB') to run lin local host***
 
 ## Usage
 
