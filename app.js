@@ -14,7 +14,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Create a db for tasks
-mongoose.connect(process.env.URL);
+mongoose.connect(process.env.URL,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    });
 
 const itemsSchema = new mongoose.Schema({
     name: String
