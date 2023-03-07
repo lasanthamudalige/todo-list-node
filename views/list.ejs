@@ -9,9 +9,11 @@
   <% newListItems.forEach(function(item) { %>
   <form action="/delete" method="post">
     <div class="item">
+      <!-- Using onchange="this.form.submit" u can trigger submit action without submit button -->
       <input type="checkbox" name="checkbox" value="<%=item.id%>" onchange="this.form.submit()"/>
       <p><%= item.name %></p>
     </div>
+    <!-- Create a new hidden input to get list name -->
     <input type="hidden" name="listName" value="<%= listTitle %>">
   </form>
   <% }); %>
