@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Create a db for tasks
-mongoose.connect(process.env.URL,
+mongoose.connect('mongodb+srv://' + process.env.USER + '-admin:' + process.env.PASSWORD + '@cluster0.ctyjgpw.mongodb.net/todolistDB',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
