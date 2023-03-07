@@ -51,8 +51,8 @@ app.get("/", (req, res) => {
                 Item.insertMany(defaultItems)
                     .then(() => {
                         console.log("Successfully saved default items to the DB.");
+                        res.redirect("/")
                     })
-                res.redirect("/")
             } else {
                 res.render("list", { listTitle: "Today", newListItems: items });
             }
@@ -70,7 +70,7 @@ app.post("/", function (req, res) {
 
     if (listName === "Today") {
         item.save();
-        res.redirect("/")
+        res.redirect("/");
     } else {
         List.findOne({ name: listName })
             .then((foundList) => {
