@@ -14,7 +14,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Create a db for tasks
-mongoose.connect('mongodb+srv://'+ process.env.USER +'-admin:' + process.env.PASSWORD + '@cluster0.ctyjgpw.mongodb.net/todolistDB');
+mongoose.connect('mongodb+srv://' + process.env.USER + '-admin:' + process.env.PASSWORD + '@cluster0.ctyjgpw.mongodb.net/todolistDB',
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    });
 
 const itemsSchema = new mongoose.Schema({
     name: String
