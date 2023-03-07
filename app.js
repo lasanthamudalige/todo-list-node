@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 // Import lodash
 const _ = require("lodash");
+// Import dotenv from .env file
+require('dotenv').config();
 
 const app = express();
 
@@ -12,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Create a db for tasks
-mongoose.connect('mongodb+srv://lasantha-admin:oorrio62MsiFYPhf@cluster0.ctyjgpw.mongodb.net/todolistDB');
+mongoose.connect('mongodb+srv://'+ process.env.USER +'-admin:' + process.env.PASSWORD + '@cluster0.ctyjgpw.mongodb.net/todolistDB');
 
 const itemsSchema = new mongoose.Schema({
     name: String
