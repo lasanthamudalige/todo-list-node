@@ -12,14 +12,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Create a db for tasks
-mongoose.connect('mongodb://localhost:27017/todolistDB');
+mongoose.connect('mongodb+srv://lasantha-admin:oorrio62MsiFYPhf@cluster0.ctyjgpw.mongodb.net/todolistDB');
 
 const itemsSchema = new mongoose.Schema({
     name: String
 });
 
 const Item = mongoose.model("Item", itemsSchema);
-const WorkItem = mongoose.model("workItems", itemsSchema);
 
 // Default items to add to an empty List
 const item1 = new Item({
@@ -41,6 +40,7 @@ const listSchema = {
     items: [itemsSchema]
 };
 
+// Custom list for different ToDo Lists 
 const List = mongoose.model("List", listSchema);
 
 app.get("/", (req, res) => {
