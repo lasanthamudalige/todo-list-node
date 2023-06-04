@@ -16,6 +16,7 @@ User can add new tasks and start it and then complete them in a progressive mann
 Project is created with:
 * Javascript version: ES 6
 * Node version: 18
+* Express version: 4.18
 * MongoDB version: 6.0.4
 
 ## Screenshots
